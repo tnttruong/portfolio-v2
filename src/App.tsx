@@ -1,15 +1,19 @@
-import React from "react";
+import Intro from "./components/Intro";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Project from "./components/projects/Project";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
-      <div className="text-3xl font-bold underline">
-        <p>
-          hello world!
-        </p>
-      </div>
-    </>
+    <div>
+      <Navbar />
+      <div><Intro /></div>
+      <div id="about"><About/></div>
+      <div id="projects"><Project/></div>
+      <div id="contact"><Contact/></div>
+    </div>
   )
 }
 
-export default App
+export default App;
