@@ -4,10 +4,10 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="fixed bg-transparent text-white px-4 py-3">
-            <div className="flex justify-end items-center ml-75 ">
+        <div className="fixed top-0 right-0 bg-transparent text-white px-4 py-3 w-full">
+            <div className="flex justify-end items-center">
                 {/* hamburger */}
-                <button className="md:hidden absolute top-4 right-4 " onClick={() => setIsOpen(!isOpen)}>
+                <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
                     <span className="block w-6 h-0.5 bg-bone my-1" />
                     <span className="block w-6 h-0.5 bg-bone my-1" />
                     <span className="block w-6 h-0.5 bg-bone my-1" />
@@ -24,7 +24,7 @@ const Navbar = () => {
 
             {/* Mobile */}
             {isOpen && (
-                <div className="flex flex-col mt-10 space-y-2 md:hidden ml-60">
+                <div className="flex flex-col space-y-1 md:hidden items-end">
                     <a href="/">Home</a>
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
